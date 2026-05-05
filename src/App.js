@@ -345,7 +345,7 @@ export default function Portfolio() {
                   love building innovative solutions and learning new technologies.
                 </p>
                 <div className="hero-actions">
-                  <a className="btn btn-primary" href="/resume.pdf" download>
+                  <a className="btn btn-primary" href="/Resume.pdf" download>
                     Download Resume
                   </a>
                 </div>
