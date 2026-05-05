@@ -95,7 +95,7 @@ const projects = [
     technologies: ['React', 'CSS3', 'JavaScript'],
     image: 'https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=600&h=400&fit=crop',
     github: 'https://github.com/chami48/portfolio-react/',
-    demo: 'https://dilmi-chamya-personalprofile.netlify.app/'
+    demo: 'https://dilmi-chamya-personal-profile.netlify.app/'
   },
   {
     title: 'WellnessMate App – Mobile (Kotlin)',
