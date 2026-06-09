@@ -1146,21 +1146,64 @@ main {
 }
 
 @media (max-width: 768px) {
+  .nav {
+    top: 12px;
+    width: calc(100% - 20px);
+    padding: 10px 14px;
+  }
+
+  .nav-inner {
+    gap: 12px;
+  }
+
   .hero {
-    padding-top: 120px;
+    min-height: auto;
+    padding: 112px 16px 64px;
   }
 
   .hero-grid {
+    display: grid;
     grid-template-columns: 1fr;
-    gap: 32px;
+    gap: 28px;
   }
 
   .hero-copy {
     text-align: center;
   }
 
+  .hero-image {
+    justify-self: center;
+  }
+
+  .hero-image::before {
+    width: 240px;
+    height: 240px;
+  }
+
+  .image-wrapper {
+    width: min(82vw, 320px);
+    height: min(100vw, 460px);
+  }
+
+  .hero-orbit {
+    width: min(320px, 84vw);
+    height: min(320px, 84vw);
+  }
+
+  .skills-shell {
+    padding: 22px 14px 18px;
+  }
+
   .social-row {
     justify-content: center;
+  }
+
+  .project-card,
+  .cert-card,
+  .contact-card,
+  .education-card,
+  .skills-shell {
+    border-radius: 20px;
   }
 
   .cursor-glow {
@@ -1169,8 +1212,17 @@ main {
 }
 
 @media (max-width: 600px) {
+  .nav {
+    width: calc(100% - 16px);
+    border-radius: 18px;
+  }
+
+  .nav-mobile {
+    padding-top: 8px;
+  }
+
   .section {
-    padding: 80px 18px;
+    padding: 72px 16px;
   }
 
   .certifications-section {
@@ -1195,26 +1247,67 @@ main {
   }
 
   .hero-title {
-    font-size: 2rem;
+    font-size: clamp(1.9rem, 7vw, 2.35rem);
   }
 
   .hero-text {
     font-size: 1rem;
+    line-height: 1.7;
+  }
+
+  .hero-actions {
+    gap: 12px;
+  }
+
+  .btn {
+    width: 100%;
+    justify-content: center;
+    padding: 13px 20px;
+  }
+
+  .social-row {
+    gap: 12px;
+  }
+
+  .social-link {
+    width: 44px;
+    height: 44px;
   }
 
   .skills-orbit {
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
   }
 
   .orbit-core {
-    width: 96px;
-    height: 96px;
-    font-size: 0.85rem;
+    width: 88px;
+    height: 88px;
+    font-size: 0.8rem;
   }
 
   .orbit-node {
-    font-size: 0.75rem;
+    font-size: 0.7rem;
+    padding: 8px 10px;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project-media {
+    height: 190px;
+  }
+
+  .project-body {
+    padding: 20px;
+  }
+
+  .contact-card {
+    padding: 28px 18px;
   }
 }
 
